@@ -1,0 +1,547 @@
+/*!
+ * My Style CSS V.1.0
+ * Copyright 2016-2017 Protecto ***********ProyectoNA***********
+ * Diseño y Desarrollo: Neudis López Mallén
+ * Programación: Adalberto Rosario
+ * Copyright 2016-2017 CloudMax Technology & Infinito Estudios
+ */
+*{
+
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 54px;
+}
+
+mark{
+  color: #fff200;
+  background: transparent;
+  font-weight: bold;
+  padding: 0;
+}
+
+a{
+  text-decoration: none !important;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+@media (min-width: 1200px){
+  .container {
+      width: 1300px;
+      max-width: 100%;
+  }
+}
+.myrow{
+  background: #fff;
+  border: 1px solid #ddd;
+  padding-top: 05px;
+  padding-bottom: 10px;
+  border-radius: 0 0 25px 25px;
+  margin: 15px 0;
+}
+.mycontainer{
+  background: #f7f9f9;
+  padding: 0 10px;
+  position: relative;
+
+}
+.home-widget{
+  margin-bottom: 15px;
+}
+.header-titles{
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 5px;
+
+}
+.btn-menu{
+  background: transparent;
+  color: #f44336;
+  line-height: 36px;
+}
+
+/***********************************GLOBALS CSS***********************************/
+
+.header-titles>span{
+  width: 60%;
+  display: inline-block;
+  float: left;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.header-titles>span:nth-child(2){
+  text-align: right;
+  width: 40%;
+}
+.header-titles>span>h4{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+}
+.header-titles>span>a{
+  color: #fbf200;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+}
+.header-titles>span>a>i{
+  margin-left: 08px;
+}
+#header-titles-left{
+  background: #333;
+}
+#header-titles-center{
+  background: #f44336;
+}
+#header-titles-right{
+  background: #333;
+}
+/***********************************NAV CSS***********************************/
+.navbar-custom{
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 54px;
+  z-index: 1000;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 0
+}
+ .nav {
+     list-style: none;
+     text-align: center;
+     display: block;
+     margin: 0 auto;
+     padding: 0;
+     line-height: 40px;
+ }
+
+ .navbar-nav .nav-item + .nav-item{
+   padding: 0 7px;
+   margin: 0 03px;
+   font-size: 14px;
+ }
+.nav-link{
+  color: #fff;
+  transition: all 0.5s ease-in;
+  text-transform: uppercase;
+}
+.nav-item:hover{
+  background: #f44336;
+}
+.nav-item:hover .nav-link{
+    color: #fff;
+}
+
+/*REGISTRAR E INICIAR SECCIÓN WIDGET*/
+
+
+.registro-widget>span{
+  display: table-cell;
+  padding: 0 7px;
+  padding-top: 0.5rem;
+  padding-bottom: .40rem;
+  line-height: 40px;
+}
+.registro-widget>span>a{
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.registro-widget>span:nth-child(1){
+  background: #fbf200;
+  border-right: 1px solid #ece406;
+}
+.registro-widget>span:nth-child(2){
+  background: #fbf200;
+}
+
+
+/************************************ARTICLES CSS************************************/
+.small-car{
+  margin: 15px 0;
+}
+.small-car>header{
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.small-car:hover .small-car>header>img{
+}
+.small-car>footer{
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #ddd;
+  float: left;
+  width: 100%;
+}
+.small-car>footer>span{
+  display: block;
+  padding: 10px;
+  float: left;
+}
+.small-car>footer>span>h6{
+
+}
+.car-brand{
+width: 30%}
+.car-brand>h6{
+  color: #333;
+  font-size: 12px;
+  margin: 0;
+}
+.car-price{
+  width: 70%;
+  text-align: right;
+}
+.car-price>h6{
+  color: #f44336;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.open-car{
+  position: absolute;
+  text-align: center;
+  line-height: 133px;
+  margin: 0 auto;
+  left: 40%;
+  z-index: 1000;
+  display: none;
+  transition: all 0.5s;
+}
+.open-car>a>i{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 100%;
+  color: #fff;
+  transition: all 0.5s;
+}
+article>header>a>img{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+article:hover header>a>img{
+  opacity: 0.5;
+  transform: scale(1.1,1.1);
+}
+article:hover .open-car{
+  display: block;
+}
+
+/************************************LARGE ARTICLES CSS************************************/
+.paid-article-container{
+  padding: 0;
+}
+.large-car{
+  margin: 15px 0;
+  float: left;
+}
+.large-car>header{
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  max-height: 175px;
+}
+.large-car:hover .large-car>header>img{
+}
+.large-car>footer{
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #ddd;
+  float: left;
+  width: 100%;
+}
+.large-car>footer>span{
+  display: block;
+  padding: 10px;
+  float: left;
+}
+
+.large-car-info{
+  width: 50%;
+  float: left;
+  padding: 05px 20px;
+}
+.large-car-info>span>h6{
+  margin: 5px 0;
+  color: #636667;
+}
+.large-car-info>span>h6>strong{
+  color: #333;
+}
+.large-car-price{
+  width: 50%;
+  float: left;
+  padding: 05px 20px;
+}
+.large-car-price>span>h6{
+  line-height: 49px;
+  font-size: 24px;
+  color: #f44336;
+  margin: 0;
+}
+
+.large-open-car{
+  position: absolute;
+  text-align: center;
+  line-height: 184px;
+  margin: 0 auto;
+  left: 44%;
+  z-index: 1000;
+  display: none;
+  transition: all 0.5s;
+}
+.large-open-car>a>i{
+  width: 50px;
+  height: 50px;
+  background: #000;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 100%;
+  color: #fff;
+  transition: all 0.5s;
+}
+article:hover header>a>img{
+  opacity: 0.5;
+  transform: scale(1.1,1.1);
+}
+article:hover .large-open-car{
+  display: block;
+}
+.large-car-img{
+  margin-top: -35px;
+}
+
+.carousel-control.left {
+    background: url(../img/sources/arrow-left.svg);
+    background-size: contain;
+    width: 40px;
+    background-repeat: no-repeat;
+    left: -25px;
+    max-height: 200px;
+    top: 34px;
+}
+
+.carousel-control.right {
+    background: url(../img/sources/arrow-right.svg);
+    background-size: contain;
+    width: 40px;
+    background-repeat: no-repeat;
+    right: -31px;
+    max-height: 200px;
+    top: 34px;
+}
+#cleft {
+    left: 0;
+    width: 10px;
+    top: 45%;
+}
+#cright {
+    right: 0;
+    width: 10px;
+    top: 45%;
+}
+/************************************BRANDS CSS************************************/
+.brand-widget{
+
+}
+.brand-widget>a>img{
+  width: 100%;
+  max-width: 70px;
+}
+/************************************PUBLICIDAD CSS************************************/
+.publicidad-widget
+.publicidad-widget>img{
+  width: 100%
+}
+/************************************PAGINATION CSS************************************/
+.paginacion-nav{
+  text-align: center;
+}
+.active>.page-link{
+  color: #fff !important;
+  background-color: #c3b8b8 !important;
+  border-color: #c3b8b8 !important;
+}
+.page-link{
+  color: #333 !important;
+}
+
+
+/***********************************FOOTER CSS***********************************/
+
+.footer-section{
+  background: #000;
+  padding: 2% 0;
+}
+.footer-widget{
+}
+.heading-title{
+  display: flex;
+}
+.heading-title>h4{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  display: inline-block;
+}
+.heading-title>span{
+  display: inline-block;
+  background: #f44336;
+  content: '';
+  width: 100%;
+  height: 16px;
+  margin-left: 05px;
+  float: right;
+}
+.footer-list{
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 7px;
+}
+.footer-list>li{
+  font-size: 14px;
+  font-weight: 300;
+  margin: 05px 0;
+}
+.footer-list>li>a{
+  color: #fff;
+}
+.footer-list>li>a:hover{
+  color: #f44336;
+}
+.footer-list>li>a>i{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.footer-list>li:hover .fa{
+  background: #f44336;
+}
+
+
+.footer-copyright-section{
+  background: #fff;
+  padding: 10px 0;
+}
+.copyright-block{
+  text-align: center;
+}
+.copyright-block>p{
+  margin: 0;
+  color: #86bcbd;
+  font-size: 12px;
+}
+
+/************************************MOVILE CSS************************************/
+
+ @media (min-width: 1200px){
+   .collapse{
+     display: block;
+     top: 0 !important;
+   }
+   .navbar-toggle{
+     display: none;
+   }
+ }
+ @media (max-width: 1199px){
+    .collapse{
+      position: relative;
+      background: #000;
+      border-top: 5px solid #f44336;
+      left: -31px;
+      padding-bottom: 25px;
+      top: 0 ;
+      width: 300px;
+      height: 350px;
+    }
+    .registro-widget{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .small-menu{
+      position: absolute;
+    }
+    .nav {
+      text-align: left;
+      margin: 15px 0;
+      line-height: 20px;
+}
+    .navbar-nav .nav-item {
+      float: none;
+      font-size: 14px;
+}
+.large-car-info{
+    width: 100%;
+}
+.large-car-price{
+    width: 100%;
+}
+ }
+ @media (min-width: 769px){
+   .collapse{
+       left: -38px;
+      top: 54px;
+   }
+
+ }
+ @media (max-width: 768px){
+   .collapse{
+      top: -8px;
+   }
+   .large-car-img {
+      margin-top: 0;
+  }
+  .large-car-info{
+      width: 100%;
+}
+  .large-car-price{
+      width: 100%;
+}
+  .large-car-price>span>h6 {
+    line-height: 1;
+    font-size: 22px;
+    color: #f44336;
+    margin: 0;
+}
+
+ }
+
+ }
+@media (max-width: 547px) {
+  .header-titles>span>h4{
+      font-size: 12px;
+      top: 58px;
+  }
+  .header-titles>span>a{
+      font-size: 12px;
+  }
+  .large-car-info{
+      width: 50% !important;
+}
+  .large-car-price{
+      width: 50% !important;
+}
+}
